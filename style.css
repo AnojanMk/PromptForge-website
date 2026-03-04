@@ -1,0 +1,191 @@
+/* ========== PROMPTFORGE - COMPLETE CSS ========== */
+/* FILE: style.css */
+
+:root {
+  --forge-primary: #4f46e5;
+  --forge-primary-dark: #4338ca;
+  --forge-bg-soft: #eef2ff;
+  --forge-text-dark: #1e1b4b;
+}
+
+* {
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background: #f9fafc;
+}
+
+/* navigation */
+.forge-nav {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(79, 70, 229, 0.1);
+  padding: 0.75rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  color: var(--forge-text-dark);
+}
+
+.brand-icon {
+  width: 40px;
+  height: 40px;
+  background: var(--forge-bg-soft);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--forge-primary);
+  font-size: 1.4rem;
+}
+
+.nav-link {
+  font-weight: 500;
+  color: #2d3a4b;
+  margin: 0 0.25rem;
+  border-radius: 30px;
+  transition: 0.2s;
+}
+
+.nav-link:hover {
+  color: var(--forge-primary);
+  background: var(--forge-bg-soft);
+}
+
+.nav-link.active {
+  color: var(--forge-primary) !important;
+  background: var(--forge-bg-soft);
+}
+
+.forge-nav-cta {
+  background: var(--forge-primary);
+  color: white !important;
+  padding: 0.5rem 1.25rem !important;
+  margin-left: 0.5rem;
+}
+
+.forge-nav-cta:hover {
+  background: var(--forge-primary-dark) !important;
+  color: white !important;
+}
+
+/* hero */
+.hero-section {
+  padding: 3rem 0 2rem;
+}
+
+.hero-grad {
+  background: linear-gradient(145deg, #1e1b4b, #4f46e5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.btn-forge {
+  background: var(--forge-primary);
+  border: none;
+  color: white;
+  font-weight: 500;
+  padding: 0.7rem 2rem;
+  border-radius: 40px;
+  box-shadow: 0 8px 18px rgba(79, 70, 229, 0.25);
+  transition: 0.2s;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-forge:hover {
+  background: var(--forge-primary-dark);
+  color: white;
+  transform: scale(1.02);
+}
+
+.btn-outline-forge {
+  background: transparent;
+  border: 1.5px solid var(--forge-primary);
+  color: var(--forge-primary);
+  font-weight: 500;
+  padding: 0.5rem 1.5rem;
+  border-radius: 40px;
+  transition: 0.2s;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-outline-forge:hover {
+  background: var(--forge-primary);
+  color: white;
+}
+
+.btn-outline-secondary {
+  border-radius: 40px;
+  padding: 0.7rem 2rem;
+  border-width: 1.5px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.bg-brand-soft {
+  background: var(--forge-bg-soft);
+}
+
+.brand-violet {
+  color: var(--forge-primary);
+}
+
+.forge-card {
+  border: none;
+  border-radius: 28px;
+  background: white;
+  box-shadow: 0 25px 45px -12px rgba(79, 70, 229, 0.15);
+}
+
+#promptOutput {
+  transition: all 0.2s;
+  border-left: 4px solid var(--forge-primary);
+}
+
+.form-select,
+.form-control {
+  border-radius: 16px;
+  border: 1.5px solid #e2e8f0;
+  padding: 0.6rem 1rem;
+}
+
+.form-select:focus,
+.form-control:focus {
+  border-color: var(--forge-primary);
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.2);
+}
+
+/* template cards */
+.template-card {
+  transition: 0.3s;
+  border-radius: 20px;
+}
+
+.template-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 30px 50px -20px rgba(79, 70, 229, 0.3) !important;
+}
+
+/* pricing cards */
+.pricing-card {
+  border-radius: 24px;
+  transition: 0.3s;
+}
+
+.pricing-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 30px 50px -20px rgba(79, 70, 229, 0.3) !important;
+}
+
+.pricing-card.popular {
+  border: 2px solid var(--forge-primary);
+  transform: scale(1.02);
+}
